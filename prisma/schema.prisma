@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://USERNAME:PASSWORD@HOST:PORT/devDB"
+}
+
+model AirCompany {
+  id          String   @id @default(cuid())
+  name        String
+  companyType String
+  foundedAt   DateTime
+
+  Flights   Flight[]
+  Airplanes Airplane[]
+
+  entityStatus    Boolean   @default(true)
+  entityCreatedAt DateTime  @default(now())
+  entityUpdatedAt DateTime? @updatedAt
+  entityDeletedAt DateTime?
+}
+
+model Airplane {
+  id                  String   @id @default(cuid())
+  name                String
+  factorySerialNumber String
+  numberOfFlights     Int
+  flightDistance      Int
+  fuelCapacity        Int
+  type                String
+  createdAt           DateTime @default(now())
+
+  airCompanyId String?
+  airCompany   AirCompany? @relation(fields: [airCompanyId], references: [id])
+
+  Flight Flight[]
+
+  entityStatus    Boolean   @default(true)
+  entityCreatedAt DateTime  @default(now())
+  entityUpdatedAt DateTime? @updatedAt
+  entityDeletedAt DateTime?
+}
+
+model Flight {
+  id                  String    @id @default(cuid())
+  flightStatus        String    @default("PENDING")
+  departureCountry    String
+  destinationCountry  String
+  distance            Int
+  estimatedFlightTime Int
+  startedAt           DateTime?
+  endedAt             DateTime?
+  delayStartedAt      DateTime?
+  createdAt           DateTime  @default(now())
+
+  airPlaneId String
+  airPlane   Airplane @relation(fields: [airPlaneId], references: [id])
+
+  airCompanyId String
+  airCompany   AirCompany @relation(fields: [airCompanyId], references: [id])
+
+  entityStatus    Boolean   @default(true)
+  entityCreatedAt DateTime  @default(now())
+  entityUpdatedAt DateTime? @updatedAt
+  entityDeletedAt DateTime?
+}

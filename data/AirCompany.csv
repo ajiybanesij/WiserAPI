@@ -1,0 +1,5 @@
+id,name,companyType,foundedAt,entityStatus,entityCreatedAt,entityUpdatedAt,entityDeletedAt
+clb2m3kg70000ynw6fxrhkleq,Turkish Airlines,Passenger,1933-05-19 22:00:00.000,true,2022-11-29 19:28:22.086,2022-11-29 19:28:22.086,
+clb2m3kgw0002ynw69ehxydhh,Pegasus Airlines,Passenger,1989-05-19 21:00:00.000,true,2022-11-29 19:28:22.112,2022-11-29 19:28:22.112,
+clb2m3kh20004ynw6z879e7nb,THY Cargo,Cargo,1991-05-19 21:00:00.000,true,2022-11-29 19:28:22.119,2022-11-29 19:28:22.119,
+clb2m3kh70006ynw6yv8m38pz,DHL Express,Cargo,1969-05-19 22:00:00.000,true,2022-11-29 19:28:22.123,2022-11-29 19:28:22.123,

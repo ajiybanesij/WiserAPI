@@ -1,0 +1,6 @@
+id,name,factorySerialNumber,numberOfFlights,flightDistance,fuelCapacity,type,createdAt,airCompanyId,entityStatus,entityCreatedAt,entityUpdatedAt,entityDeletedAt
+clb2mbnwq0001ynnkkryhao3z,Boeing 737-800,1012,567,304,31,Passenger,2022-11-29 19:34:39.817,clb2m3kgw0002ynw69ehxydhh,true,2022-11-29 19:34:39.817,2022-11-29 19:34:39.817,
+clb2mbnxg0003ynnk13ojdspw,Boeing 737-900,93632,846,659,91,Passenger,2022-11-29 19:34:39.845,clb2m3kh20004ynw6z879e7nb,true,2022-11-29 19:34:39.845,2022-11-29 19:34:39.845,
+clb2mbnxn0005ynnkgljvl9to,Boeing 737-900ER,5166,687,84,78,Passenger,2022-11-29 19:34:39.852,clb2m3kgw0002ynw69ehxydhh,true,2022-11-29 19:34:39.852,2022-11-29 19:34:39.852,
+clb2mbnxt0007ynnkpx170iel,Boeing 737-900ER,78474,559,450,97,Passenger,2022-11-29 19:34:39.857,clb2m3kh20004ynw6z879e7nb,true,2022-11-29 19:34:39.857,2022-11-29 19:34:39.857,
+clb2mbnxz0009ynnk0lbrs7i7,Boeing 737-900ER,86278,568,359,41,Passenger,2022-11-29 19:34:39.863,clb2m3kgw0002ynw69ehxydhh,true,2022-11-29 19:34:39.863,2022-11-29 19:34:39.863,

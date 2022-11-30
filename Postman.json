@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "8b166f22-cc7a-4223-8f5f-6f2c5fe7fdee",
+		"name": "Wiser API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4144541"
+	},
+	"item": [
+		{
+			"name": "Air Plane",
+			"item": [
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/airplane",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"airplane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/airplane/clb135ifq0001ynid0l46hycr",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"airplane",
+								"clb135ifq0001ynid0l46hycr"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"TEST2\",\n    \"factorySerialNumber\": \"String\",\n    \"numberOfFlights\": 1,\n    \"flightDistance\": 1,\n    \"fuelCapacity\": 1,\n    \"type\": \"String\",\n    \"airCompanyId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/airplane",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"airplane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"clb2ljmbt0001ynueyj37bk23\",\n    \"name\": \"TEST234\",\n    \"factorySerialNumber\": \"String\",\n    \"numberOfFlights\": 1,\n    \"flightDistance\": 1,\n    \"fuelCapacity\": 1,\n    \"type\": \"String\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/airplane",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"airplane"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Moving Plane",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"clb2ljmbt0001ynueyj37bk23\",\n    \"airCompanyId\":\"clb130xae0000yn5wjau9fqef\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/airplane/moving",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"airplane",
+								"moving"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"clb2ljmbt0001ynueyj37bk23\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/airplane",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"airplane"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Air Company",
+			"item": [
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aircompany",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aircompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/aircompany/clb130xae0000yn5wjau9fqef",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aircompany",
+								"clb130xae0000yn5wjau9fqef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"TEST Company\",\n    \"companyType\":\"Test Cargo\",\n    \"foundedAt\":\"1933-05-19T22:00:00.000Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aircompany",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aircompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"clb2lodds0000yn3dgpe93von\",\n    \"name\": \"TEST2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aircompany",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aircompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"clb2lodds0000yn3dgpe93von\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/aircompany",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"aircompany"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Flight",
+			"item": [
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/flight",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/flight/id/clb15pji30000yngnlyfybqus",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight",
+								"id",
+								"clb15pji30000yngnlyfybqus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/flight/staus/COMPLETED",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight",
+								"staus",
+								"COMPLETED"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Active and 24 Hours Ago",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/flight/active",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight",
+								"active"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Conpany Name and Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/flight/detail/THY Cargo/PENDING",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight",
+								"detail",
+								"THY Cargo",
+								"PENDING"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"departureCountry\": \"Ankara\",\n    \"destinationCountry\": \"Antalya\",\n    \"distance\": 600,\n    \"estimatedFlightTime\": 1,\n    \"airPlaneId\": \"clb135igm0003ynid5j42qigp\",\n    \"airCompanyId\": \"clb130xb50004yn5weiq8nx92\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/flight",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"clb15p1b80000ynfmofdq1g9t\",\n    \"flightStatus\": \"COMPLETED\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/flight",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"clb2lt4pv0001ynbxx8o5r5p6\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/flight",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"flight"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/airplane",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"airplane"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:6000",
+			"type": "string"
+		}
+	]
+}
